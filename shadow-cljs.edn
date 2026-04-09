@@ -1,0 +1,20 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dev-http {8080 "public"}
+
+ :dependencies
+ []
+
+ :builds
+ {:app 
+  {:target :browser
+   :js-options {:js-provider :external
+                :external-index "target/gen/libs.js"
+                :external-index-format :esm
+                :external-index-always-optimize true}
+   :modules {:app
+             {:init-fn main/start!}}}}}
