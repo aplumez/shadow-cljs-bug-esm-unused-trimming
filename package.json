@@ -3,9 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
-    "shadow-cljs": "3.3.8"
+    "shadow-cljs": "3.4.6"
   },
   "dependencies": {
-    "@chakra-ui/react": "^3.34.0"
+    "@chakra-ui/react": "^3.34.0",
+    "esbuild": "^0.28.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "scripts": {
+    "build:libs": "node build.mjs"
   }
 }

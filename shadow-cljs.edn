@@ -7,10 +7,10 @@
  :dev-http {8080 "public"}
 
  :dependencies
- []
+ [[reagent "2.0.1"]]
 
  :builds
- {:app 
+ {:app
   {:target :browser
    :js-options {:js-provider :external
                 :external-index "target/gen/libs.js"
